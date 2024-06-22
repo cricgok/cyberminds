@@ -21,7 +21,7 @@ const Results = ({ user }) => {
   const saveResults = useCallback(async () => {
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/save-results', {
+      await axios.post('https://xeuhjsvzzc.ap-south-1.awsapprunner.com/save-results', {
         userId: user.id,
         username: user.username,
         tableName,
@@ -41,7 +41,7 @@ const Results = ({ user }) => {
 
   const fetchQuizData = useCallback(async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/quizzes/${tableName}`);
+      const response = await axios.get(`https://xeuhjsvzzc.ap-south-1.awsapprunner.com/quizzes/${tableName}`);
       setQuizQuestions(response.data);
     } catch (error) {
       console.error('Error fetching quiz data:', error.response ? error.response.data : error.message);

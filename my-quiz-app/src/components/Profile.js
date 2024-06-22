@@ -20,7 +20,7 @@ const Profile = ({ user }) => {
   useEffect(() => {
     const fetchUserStatistics = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/user-statistics/${user.id}`);
+        const response = await axios.get(`https://xeuhjsvzzc.ap-south-1.awsapprunner.com/user-statistics/${user.id}`);
         if (response.data.statistics) {
           const { total_correct_answers, total_questions_attempted, total_incorrect_answers } = response.data.statistics;
           setCorrectAnswers(total_correct_answers);

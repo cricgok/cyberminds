@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/register', { username, email, password });
+      const response = await axios.post('https://xeuhjsvzzc.ap-south-1.awsapprunner.com/register', { username, email, password });
       if (response.data.success) {
         alert('Registration successful');
         navigate('/login');
