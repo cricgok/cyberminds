@@ -220,6 +220,7 @@ const QuizItem = styled.div`
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
+  margin-right: 50%;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
