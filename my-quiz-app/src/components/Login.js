@@ -11,7 +11,7 @@ const Login = ({ setIsLoggedIn, setUser }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://xeuhjsvzzc.ap-south-1.awsapprunner.com/login', { username, password })
+    axios.post('https://cyberminds-xhm7.onrender.com/login', { username, password })
       .then(response => {
         if (response.data.success) {
           setUser(response.data.user);

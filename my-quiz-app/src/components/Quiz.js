@@ -20,7 +20,7 @@ const Quiz = ({ user, setUser }) => {
   const isDragging = useRef(false);
 
   useEffect(() => {
-    axios.get(`https://xeuhjsvzzc.ap-south-1.awsapprunner.com/quizzes/${tableName}`)
+    axios.get(`https://cyberminds-xhm7.onrender.com/quizzes/${tableName}`)
       .then(response => {
         setQuestions(response.data);
       })

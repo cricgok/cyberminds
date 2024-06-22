@@ -13,7 +13,7 @@ const Home = ({ isLoggedIn, handleLogout }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://xeuhjsvzzc.ap-south-1.awsapprunner.com/quizzes')
+    axios.get('https://cyberminds-xhm7.onrender.com/quizzes')
       .then(response => {
         const filteredQuizzes = response.data.filter(
           quiz => quiz.tableName !== 'users' && quiz.tableName !== 'results'
