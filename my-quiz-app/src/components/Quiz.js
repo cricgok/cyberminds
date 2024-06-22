@@ -276,7 +276,7 @@ const BackButton = styled.button`
   margin-left: 10px;
   font-size: 20px;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   transition: all 0.3s ease;
   font-family: 'Satoshi Variable';
   &:hover {
@@ -512,8 +512,8 @@ const RightPanel = styled.div.attrs(props => ({
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 16.5px;
   display: flex;
-  margin: 20px;
-  margin-left: 0;
+  margin: 20px ;
+  margin-left: 0%;
   flex-direction: column;
   align-items: flex-start; 
   justify-content: flex-start;
@@ -524,12 +524,12 @@ const RightPanel = styled.div.attrs(props => ({
 `;
 
 const QuestionNumber = styled.h3`
-  font-size: 28px;
+  font-size: 24px;
   font-weight:lighter;
   margin-bottom: 10px;
   font-family: 'Satoshi Variable';
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size:auto;
   }
 `;
 
@@ -568,7 +568,6 @@ const Option = styled.div`
   margin-bottom: 10px;
   border: 1px solid #ccc;
   padding: 10px 15px;
-  font-size: 12px;
   border-radius: 30px;
   cursor: pointer;
   background-color: ${({ selected }) => (selected ? '#e6e6ff' : '#fff')};

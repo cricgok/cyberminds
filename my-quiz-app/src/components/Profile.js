@@ -53,6 +53,16 @@ const Profile = ({ user }) => {
     ],
   };
 
+  const options = {
+    cutout: '80%',
+    plugins: {
+      legend: {
+        display: true,
+        position: 'bottom',
+      },
+    },
+  };
+
   const handleBackClick = () => {
     navigate('/');
   };
@@ -86,7 +96,7 @@ const Profile = ({ user }) => {
             <Card>
               <Subtitle>Quiz Statistics</Subtitle>
               <ChartContainer>
-                <Doughnut data={data} />
+                <Doughnut data={data} options={options} />
               </ChartContainer>
             </Card>
             <DetailsCard>
@@ -131,12 +141,12 @@ const Container = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  width: 44%;
+  width: 100%;
   background: #ffffff;
   padding: 20px 0;
   display: flex;
   border-radius:25px;
-  margin: 20px 20px 20px 30px;
+  margin-bottom:20px;
   justify-content: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
@@ -145,11 +155,8 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   width: 90%;
-  border-radius:25px;
-
   @media (max-width: 768px) {
     flex-direction: column;
-    margin-bottom: 20px;
   }
 `;
 
@@ -160,7 +167,6 @@ const BackButton = styled.button`
   padding: 10px;
   font-size: 24px;
   cursor: pointer;
-  margin-left:0px;
   color: #4CAF50;
   transition: all 0.3s ease;
 
@@ -170,7 +176,7 @@ const BackButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px;
   }
 `;
