@@ -128,9 +128,9 @@ const Sidebar = styled.div`
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 768px) {
-    width: 100%;
-    position: fixed;
-    height: 100vh;
+    width: auto;
+    position: auto;
+    height: auto;
     left: 0;
     transition: left 0.3s ease;
   }
@@ -195,7 +195,7 @@ const MainContent = styled.div`
   background-color: #f0f2f5;
 
   @media (min-width: 768px) {
-    padding: 40px;
+    padding: auto;
   }
 `;
 
