@@ -117,10 +117,9 @@ const Container = styled.div`
 `;
 
 const Sidebar = styled.div`
-  width: 200px;
+  width: 250px;
   background-color: #ffffff;
   display: flex;
-  margin-left:50px;
   flex-direction: column;
   border-radius: 25px;
   align-items: center;
@@ -221,7 +220,6 @@ const QuizItem = styled.div`
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
-  margin-right:55%;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -231,7 +229,12 @@ const QuizItem = styled.div`
 
   &:hover {
     background-color: #fffde7; 
-    border:#fffde7;
+    border: #fffde7;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -259,10 +262,15 @@ const QuizDetails = styled.div`
     color: black;
     font-weight: bold;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const SolveButton = styled.button`
-  padding: 16px;
+  padding: 10px 20px;
   background-color: #ffffff;
   border: 2px solid lightgray;
   border-radius: 13px;
@@ -273,7 +281,12 @@ const SolveButton = styled.button`
 
   &:hover {
     background-color: #ffc107;
-    border:yellow;
+    border: yellow;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 10px;
   }
 `;
 
