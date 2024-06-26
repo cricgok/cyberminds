@@ -342,7 +342,7 @@ const Content = styled.div`
 
 const Sidebar = styled.div`
   position: absolute;
-  width: 30%;
+  width: 40%;
   height: 100%;
   left: 10px;
   top: 2px;
